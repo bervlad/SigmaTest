@@ -12,7 +12,8 @@ var express = require("express"),
 
 app.use (bodyParser.urlencoded ({extended:true}));
 
-mongoose.connect('mongodb://localhost/usersDB', {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect('mongodb://localhost/usersDB', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://bervlad:07031989@sigmadb-dr0ln.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{console.log ('connected to mongodb server');}).catch(err => console.log (err.message));
 
 app.set ("view engine", "ejs");
 
