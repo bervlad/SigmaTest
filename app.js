@@ -57,7 +57,7 @@ app.use (function (req, res, next) {
 // //	user.incoming.push ();
 // });
 
-seedDB();
+//seedDB();
 
 // User.find ({}, function (err, docs) {
 
